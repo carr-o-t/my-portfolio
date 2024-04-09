@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* --background: 57.05 88.41% 86.47%;
+    --foreground: 206.49 52.38% 28.82%;   */
+    --background: 0deg 0% 0%;
+    --foreground: 188deg 9.2% 31.96%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%; */
+
+    --primary: 351.29deg 63.27% 80.78%;
+    --primary-foreground: 0deg 0% 0%;
+
+    /* --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;  */
+
+    --secondary: 0deg 0% 0%;
+    --secondary-foreground: 123deg 14.49% 72.94%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    @apply select-none;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.inner {
+  background-color: hsl(var(--primary));
+  .page {
+    background-color: hsl(var(--background));
+  }
+  .slide {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: hsl(var(--background));
+    z-index: 1;
+  }
+}
+
+.top-nav {
+  position: fixed;
+  width: 100%;
+  /* z-index: -1; */
+}
+
+.top-nav--background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: hsl(var(--secondary-foreground));
+}
+
+.top-nav > button {
+  outline: none;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.top-nav > li {
+  margin: 0;
+  padding: 0;
+}
+
+/* .top-nav > ul {
+  padding: 25px;
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+} */
+
+.top-nav > li {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  border-bottom: 1px solid hsl(var(--background));
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
