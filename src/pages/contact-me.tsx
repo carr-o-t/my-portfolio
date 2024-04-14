@@ -26,7 +26,7 @@ const ContactMePage: FC<ContactMePageProps> = ({}) => {
             </motion.h2>
             <motion.p
               variants={textRevealMotion(0.2, "bottomToTop")}
-              className="w-full text-left text-xl md:text-2xl text-white leading-[1.2] font-montserrat font-thin mt-8"
+              className="w-full text-left text-base md:text-2xl text-white leading-[1.2] font-montserrat font-thin mt-8"
             >
               Interested in working together? I&apos;d love to hear from you.
             </motion.p>
@@ -34,10 +34,10 @@ const ContactMePage: FC<ContactMePageProps> = ({}) => {
               variants={textRevealMotion(0.4, "leftToRight")}
               className="icons flex items-center gap-6 mt-6"
             >
-              <Link href="">
+              <Link href="https://www.github.com/carr-o-t">
                 <Icons.Github className="h-5 w-5 text-inherit" />
               </Link>
-              <Link href="">
+              <Link href="mailto:pandeystakshi@gmail.com">
                 <Icons.Gmail className="h-5 w-5 text-inherit" />
               </Link>
             </motion.div>

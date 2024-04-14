@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export default function Home() {
   return (
-    <main className={cn("bg-transparent text-secondary-foreground")}>
+    <main className={cn("bg-transparent")}>
       <LandingPage />
     </main>
   );

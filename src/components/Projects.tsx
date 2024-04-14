@@ -32,7 +32,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
       >
         PROJECTS
       </motion.h1>
-      <motion.div className="flex flex-col gap-y-16 md:gap-y-28 justify-start px-8 pt-20 md:pt-28 font-montserrat text-secondary-foreground">
+      <motion.div className="flex flex-col gap-y-16 md:gap-y-28 justify-start px-8 pt-20 md:pt-28 font-montserrat ">
         <motion.div
           ref={ref}
           initial="offscreen"
@@ -48,6 +48,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
               alt="ig-festa"
               className="shrink-0 group-hover:scale-105 transition-all ease-linear duration-100"
               fill
+              priority
             />
           </motion.div>
           <motion.div className="grow  md:text-right w-full">
@@ -60,7 +61,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
               <Badge>Firebase</Badge>
             </div>
             <div className="mt-4  flex justify-start md:justify-end">
-              <p className="max-w-[50ch] break-word text-start md:text-right leading-7">
+              <p className="max-w-[50ch] break-word text-start text-sm md:text-base md:text-right leading-7">
                 A Full-stack Instagram Clone using TypeScript, TailwindCSS and
                 Firebase A Full-stack Instagram Clone using TypeScript,
                 TailwindCSS and Firebase
@@ -97,7 +98,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
               <Badge>Next.js</Badge>
               <Badge>TailwindCSS</Badge>
             </div>
-            <p className="mt-4 max-w-[50ch] break-word leading-7">
+            <p className="mt-4 max-w-[50ch] break-word leading-7 text-sm md:text-base">
               E-commerce shop using fake store API, Nextjs, TailwindCSS and
               Redux toolkkit for state management
             </p>
@@ -120,6 +121,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
               alt="ig-festa"
               className="shrink-0 group-hover:scale-105 transition-all ease-linear duration-100"
               fill
+              priority
             />
           </motion.div>
         </motion.div>

@@ -22,7 +22,7 @@ export const NavMenu = ({ onClose }: { onClose: () => void }) => {
 
   return (
     <motion.nav
-      className="fixed h-screen w-screen bg-[#eee9e4] flex flex-col justify-end p-8 z-50"
+      className="fixed h-screen w-screen bg-[#eee9e4] flex flex-col justify-end px-4 py-8 md:p-8 z-50"
       initial={{ y: "-100%" }}
       animate={{
         y: 0,

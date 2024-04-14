@@ -15,7 +15,7 @@ const Logo: FC<LogoProps> = ({ setMenuOpen }) => {
       className="flex gap-2 items-center"
       onClick={() => setMenuOpen(false)}
     >
-      <Image src={Logo3} height={54} width={54} alt="icon" />
+      <Image src={Logo3} height={48} width={48} alt="icon" />
       {/* <Icons.logo2 className="h-8 w-8 sm:h-6 sm:w-6" /> */}
       {/* <p className="hidden text-zinc-700 text-sm font-medium md:block">
             Corroddit

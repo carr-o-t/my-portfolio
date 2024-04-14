@@ -29,7 +29,7 @@ const NewLanding: FC<NewLandingProps> = ({}) => {
           </motion.h2>
           <motion.h2
             variants={textRevealMotion(0.2, "bottomToTop")}
-            className="w-full text-left text-xl md:text-2xl text-white leading-[1.2] font-montserrat font-thin mt-8"
+            className="w-full text-left text-base md:text-2xl text-white leading-[1.2] font-montserrat font-thin mt-8"
           >
             Mastering the craft of front-end. Creating killer visuals.
           </motion.h2>
@@ -38,7 +38,7 @@ const NewLanding: FC<NewLandingProps> = ({}) => {
         <div className="">
           <motion.p
             variants={textRevealMotion(0.2, "rightToLeft")}
-            className="w-full text-left text-xl md:text-xl mix-blend-difference leading-[2] font-poppins font-extralight translate-y-full relative"
+            className="w-full text-left text-sm md:text-xl leading-[2] font-poppins font-extralight translate-y-full relative"
             style={{ lineHeight: 1.8 }}
           >
             Hi! I&apos;m Ash, a{" "}
@@ -61,15 +61,15 @@ const NewLanding: FC<NewLandingProps> = ({}) => {
             </span>{" "}
             , Tailwind CSS, and testing frameworks like Playwright and Jest.
           </motion.p>
-          <motion.div className="mt-12 flex justify-between items-center">
+          <motion.div className="mt-6 md:mt-12 flex justify-between items-center">
             <Link href="/contact-me">
               <Button className="font-semibold">Get in touch</Button>
             </Link>
             <div className="icons flex items-center gap-6">
-              <Link href="">
+              <Link href="https://www.github.com/carr-o-t">
                 <Icons.Github className="h-6 w-6 text-inherit" />
               </Link>
-              <Link href="">
+              <Link href="mailto:pandeystakshi@gmail.com">
                 <Icons.Gmail className="h-6 w-6 text-inherit" />
               </Link>
             </div>

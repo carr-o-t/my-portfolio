@@ -48,7 +48,7 @@ const NavMenuItem: React.FC<NavMenuItem> = ({
           >
             ({index.toLocaleString("en-US", { minimumIntegerDigits: 2 })})
           </motion.span>
-          <h1 className="uppercase tracking-wide text-4xl sm:text-5xl md:text-6xl flex-1">
+          <h1 className="uppercase tracking-wide text-2xl sm:text-5xl md:text-6xl flex-1">
             {title}
           </h1>
           <motion.div variants={arrowMotion}>
