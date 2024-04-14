@@ -1,9 +1,11 @@
 import { Icons } from "@/components/Icons";
 import { NavMenu } from "@/components/nav/NavMenu";
 import Navbar from "@/components/nav/Navbar";
+import { Toaster } from "@/components/ui/Sonner";
 import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import type { AppProps } from "next/app";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function App({ Component, pageProps, router }: AppProps) {
@@ -44,7 +46,13 @@ export default function App({ Component, pageProps, router }: AppProps) {
               }}
               className="h-full w-full flex flex-col justify-center items-center"
             >
-              <Icons.logo className="h-12 w-12 sm:h-8 sm:w-8" fill="black" />
+              <Image
+                src={"/logo.svg"}
+                height={64}
+                width={64}
+                alt="icon"
+                className=" invert-0"
+              />
             </motion.div>
           </motion.div>
 
@@ -65,6 +73,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
           </p>
         </footer>
       </AnimatePresence>
+      <Toaster />
     </div>
   );
 }

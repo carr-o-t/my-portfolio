@@ -22,8 +22,14 @@ const Navbar: React.FC<NavbarProps> = ({ menuOpen, setMenuOpen }) => {
 
       <div className="flex gap-x-12 justify-end items-center">
         <Link
-          href="/"
-          className="justify-self-end text-[#ccbaa9] text-lg font-light tracking-wide underline underline-offset-8"
+          href="/projects"
+          className="hidden md:block justify-self-end text-base font-light underline underline-offset-4"
+        >
+          Projects
+        </Link>
+        <Link
+          href="/contact-me"
+          className="hidden md:block justify-self-end text-base font-light underline underline-offset-4"
         >
           Get in touch
         </Link>

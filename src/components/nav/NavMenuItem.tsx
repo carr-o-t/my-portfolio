@@ -28,7 +28,7 @@ const NavMenuItem: React.FC<NavMenuItem> = ({
   return (
     <Link href={linkTo}>
       <motion.li
-        className={`cursor-pointer py-8 relative w-full ${
+        className={`cursor-pointer py-8 relative w-full text-primary ${
           isLoading ? "pointer-events-none" : "pointer-events-auto"
         }`}
         initial="initial"

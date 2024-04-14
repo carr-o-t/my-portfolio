@@ -16,8 +16,13 @@ module.exports = {
       },
     },
     fontFamily: {
-      italiana: "Italiana, serif",
-      roboto: "Roboto, sans-serif",
+      // italiana: "Italiana, serif",
+      // roboto: "Roboto, sans-serif",
+      italiana: "Cinzel, serif",
+      roboto: "Fauna One, sans-serif",
+      montserrat: "Montserrat, sans-serif",
+      syne: "Syne, sans-serif",
+      poppins: "Poppins, sans-serif",
     },
     extend: {
       colors: {

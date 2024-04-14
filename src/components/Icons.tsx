@@ -1,22 +1,24 @@
 import GithubIcon from "/public/icons8-github.svg";
 import GmailIcon from "/public/icons8-gmail.svg";
+import Logo from "/public/logo.svg";
 
 export const Icons = {
+  logo3: Logo,
   Github: (props: any) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0,0,256,256"
-      fill-rule="nonzero"
+      fillRule="nonzero"
       {...props}
     >
       <g
-        fill-opacity="0"
+        fillOpacity="0"
         fill="#ffffff"
-        fill-rule="nonzero"
+        fillRule="nonzero"
         stroke="none"
-        stroke-width="1"
-        stroke-linecap="butt"
+        strokeWidth="1"
+        strokeLinecap="butt"
         stroke-linejoin="miter"
         stroke-miterlimit="10"
         stroke-dasharray=""
@@ -31,10 +33,10 @@ export const Icons = {
       </g>
       <g
         fill="#ffffff"
-        fill-rule="nonzero"
+        fillRule="nonzero"
         stroke="none"
-        stroke-width="1"
-        stroke-linecap="butt"
+        strokeWidth="1"
+        strokeLinecap="butt"
         stroke-linejoin="miter"
         stroke-miterlimit="10"
         stroke-dasharray=""
@@ -51,7 +53,55 @@ export const Icons = {
       </g>
     </svg>
   ),
-  Gmail: GmailIcon,
+  Gmail: (props: any) => (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      viewBox="0,0,256,256"
+      width="50px"
+      height="50px"
+      fillRule="nonzero"
+    >
+      <g
+        fillOpacity="0"
+        fill="#dddddd"
+        fillRule="nonzero"
+        stroke="none"
+        strokeWidth="1"
+        strokeLinecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+        stroke-dashoffset="0"
+        font-family="none"
+        font-weight="none"
+        font-size="none"
+        text-anchor="none"
+      >
+        <path d="M0,256v-256h256v256z" id="bgRectangle"></path>
+      </g>
+      <g
+        fill="#ffffff"
+        fillRule="nonzero"
+        stroke="none"
+        strokeWidth="1"
+        strokeLinecap="butt"
+        stroke-linejoin="miter"
+        stroke-miterlimit="10"
+        stroke-dasharray=""
+        stroke-dashoffset="0"
+        font-family="none"
+        font-weight="none"
+        font-size="none"
+        text-anchor="none"
+      >
+        <g transform="scale(5.12,5.12)">
+          <path d="M43.75391,6.40234c-1.2177,-0.05335 -2.45911,0.31055 -3.48242,1.06641l-2.74609,2.02734l-12.52539,9.25977l-12.4082,-9.17187c-0.17292,-0.16897 -0.4012,-0.26957 -0.64258,-0.2832h0.25l-2.46484,-1.82422c-1.02397,-0.75773 -2.26723,-1.12367 -3.48633,-1.07031c-1.2191,0.05336 -2.4131,0.52522 -3.33984,1.43945c-1.17726,1.16068 -1.9082,2.78413 -1.9082,4.56445v3.43359c-0.01457,0.09777 -0.01457,0.19715 0,0.29492v23.36133c0,1.92119 1.57881,3.5 3.5,3.5h7.5c0.55226,-0.00006 0.99994,-0.44774 1,-1v-16.62695l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0l11.40625,-8.43164v16.62695c0.00006,0.55226 0.44774,0.99994 1,1h7.5c1.92119,0 3.5,-1.57881 3.5,-3.5v-23.38086c0.01129,-0.08622 0.01129,-0.17355 0,-0.25977v-3.44922c0,-1.75846 -0.70954,-3.37437 -1.87109,-4.53711c-0.03357,-0.03357 -0.04482,-0.04287 -0.03125,-0.0293c-0.00194,-0.00196 -0.0039,-0.00391 -0.00586,-0.00586c-0.92656,-0.91221 -2.12019,-1.3822 -3.33789,-1.43555zM43.64453,8.40039c0.7563,0.02965 1.48952,0.3165 2.04492,0.86328c0.01891,0.01867 0.03272,0.03277 0.02344,0.02344c0.79645,0.79726 1.28711,1.9015 1.28711,3.12305v3.08594l-8,5.91211v-10.4082c0.00042,-0.0339 -0.00088,-0.0678 -0.00391,-0.10156l2.46289,-1.82031c0.00065,0 0.0013,0 0.00195,0c0.64864,-0.47915 1.42729,-0.70739 2.18359,-0.67773zM6.35742,8.40625c0.75715,-0.02964 1.53847,0.19746 2.1875,0.67773l2.45898,1.81836c-0.00289,0.03247 -0.0042,0.06506 -0.00391,0.09766v10.4082l-8,-5.91211v-3.08594c0,-1.23567 0.50176,-2.3413 1.3125,-3.14062c0.55526,-0.54776 1.28777,-0.83364 2.04492,-0.86328zM37,12.37109v10.51563l-12,8.86914l-12,-8.86914v-10.51367l11.40625,8.43164c0.353,0.26043 0.8345,0.26043 1.1875,0zM3,17.98242l8,5.91406v17.10352h-6.5c-0.84081,0 -1.5,-0.65919 -1.5,-1.5zM47,17.98242v21.51758c0,0.84081 -0.65919,1.5 -1.5,1.5h-6.5v-17.10352z"></path>
+        </g>
+      </g>
+    </svg>
+  ),
   logo: ({ fill = "white", ...props }: any) => (
     <svg
       {...props}
@@ -144,6 +194,195 @@ export const Icons = {
       <path d="M9 17H7A5 5 0 0 1 7 7h2" />
       <path d="M15 7h2a5 5 0 1 1 0 10h-2" />
       <line x1="8" x2="16" y1="12" y2="12" />
+    </svg>
+  ),
+  logo2: (props: any) => (
+    <svg
+      id="Layer_1"
+      data-name="Layer 1"
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      viewBox="0 0 1000 1000"
+    >
+      <rect className="cls-1" width="24" height="24" fill="white" {...props} />
+      <g>
+        <g>
+          <path
+            className="cls-2"
+            fill="#fff"
+            strokeWidth={"0px"}
+            d="M437.1,83.4c-15.4-18.3-29.8-42.3-53.7-42.6-25.7-.3-45.8,27.7-43.2,53.3,7.2,70.4,143.5,141.7,158.6,126.5,7.5-7.5-21-88.9-61.7-137.2Z"
+          />
+          <path
+            className="cls-2"
+            fill="#fff"
+            strokeWidth={"0px"}
+            d="M581.5,110.1c12.4-14.8,24.1-34.2,43.4-34.4,20.8-.2,37,22.4,34.9,43.1-5.8,56.9-116,114.6-128.2,102.3-6-6.1,17-71.9,49.9-111Z"
+          />
+        </g>
+        <g>
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="308.8"
+            y1="281.1"
+            x2="691.2"
+            y2="281.1"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="325.3"
+            y1="342.8"
+            x2="672.7"
+            y2="342.8"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="343.3"
+            y1="406.5"
+            x2="657.6"
+            y2="406.5"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="361.3"
+            y1="468.1"
+            x2="640"
+            y2="468.1"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="376.5"
+            y1="529.1"
+            x2="621.9"
+            y2="529.1"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="396.9"
+            y1="590.2"
+            x2="603.3"
+            y2="590.2"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="412.8"
+            y1="651.4"
+            x2="585.7"
+            y2="651.4"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="431.1"
+            y1="713.5"
+            x2="569.7"
+            y2="713.5"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="448.1"
+            y1="774.7"
+            x2="551.6"
+            y2="774.7"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="465.8"
+            y1="835.8"
+            x2="534"
+            y2="835.8"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="482.3"
+            y1="897.6"
+            x2="517.5"
+            y2="897.6"
+          />
+          <line
+            className="cls-3"
+            stroke="white"
+            strokeLinecap="round"
+            strokeMiterlimit={10}
+            strokeWidth={"11px"}
+            fill="#fff"
+            x1="493.4"
+            y1="959.1"
+            x2="507.4"
+            y2="959.1"
+          />
+        </g>
+      </g>
+    </svg>
+  ),
+  Cloud: (props: any) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="55.90209"
+      height="34.6858"
+      viewBox="0 0 55.90209 34.6858"
+      {...props}
+    >
+      <path
+        d="M45.36189,29.12612c-9.08438,.16936-18.18242,.49977-27.26831,.49136-3.60971-.00334-7.5636-.25821-10.50914-2.59748-2.11868-1.6826-3.43129-4.50772-1.97089-7.03548,1.32696-2.29678,4.69467-2.17211,5.30349,.22825,.69568,2.74286,4.91281,2.15213,4.9107-.6646-.00371-4.93822,.02234-12.56512,5.90146-14.27636,2.42208-.705,5.10864-.20143,6.90179,1.63071,1.75255,1.79066,2.43231,4.43792,1.79094,6.84485-.67233,2.52316,2.34798,4.02345,4.17846,2.43237,4.46862-3.88419,12.24315-5.06495,15.49937,.9347,3.33571,6.14611-4.21957,9.84343-8.77921,11.81614-1.23941,.53622-1.51991,2.3553-.89688,3.42047,.74888,1.28034,2.17624,1.43519,3.42047,.89688,5.65866-2.44819,12.45443-6.43865,12.03986-13.57872-.40907-7.04537-6.93619-12.21163-13.82317-11.76913-4.1324,.26551-7.89605,2.04963-10.99597,4.74413l4.17846,2.43237c1.04759-3.93146,.01967-8.11683-2.6128-11.19829C29.86934,.64613,25.53667-.51785,21.44108,.2077c-4.07474,.72185-7.27539,3.68188-8.86592,7.41484-1.59692,3.74796-1.75045,7.90579-1.74742,11.92563l4.9107-.6646c-1.07148-4.2245-6.01976-6.61315-10.06459-5.14907C1.31779,15.31123-.8218,20.3918,.29094,24.7429c1.15409,4.51278,5.27301,7.65228,9.57348,8.91989,5.16599,1.52273,10.85724,.92268,16.16508,.82373l19.33239-.36041c3.21356-.05991,3.22406-5.0601,0-5h0Z"
+        fill="currentcolor"
+        strokeWidth={"2px"}
+        origin="undraw"
+      />
     </svg>
   ),
 };

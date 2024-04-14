@@ -1,64 +1,83 @@
 "use client";
 
-import { FC } from "react";
-import { Button } from "./ui/Button";
-import EntryAndExit from "./EntryAndExit";
+import { textHighlight, textRevealMotion } from "@/lib/animations";
 import { motion } from "framer-motion";
-import { textRevealMotion } from "@/lib/animations";
+import Link from "next/link";
+import { FC } from "react";
+import CursorBlinker from "./animations/CursorBlinker";
+import RedoAnimText from "./animations/RedoAnimText";
+import { Button } from "./ui/Button";
+import { Icons } from "./Icons";
 
-interface LandingPageProps {}
+interface NewLandingProps {}
 
-const LandingPage: FC<LandingPageProps> = ({}) => {
+const NewLanding: FC<NewLandingProps> = ({}) => {
   return (
-    // <EntryAndExit>
     <motion.div
       initial="initial"
       animate="animate"
-      className="container flex min-h-[calc(100vh_-_92px)] flex-col items-center justify-center "
+      className="container block min-h-[calc(100vh_-_92px)] flex-col items-center justify-center  "
     >
-      <motion.h1
-        variants={textRevealMotion(0.2, "bottomToTop")}
-        className="w-full uppercase text-center text-5xl md:text-7xl text-secondary-foreground leading-[1.2]"
-      >
-        Hey I am{" "}
-        <span
-          style={{ WebkitTextStroke: "0px" }}
-          className="text-primary font-italiana"
-        >
-          STAKSHI
-        </span>
-        <br />
-        but you can call me{" "}
-        <span
-          style={{ WebkitTextStroke: "0px" }}
-          className="text-primary font-italiana"
-        >
-          ASH
-        </span>
-        .
-      </motion.h1>
-      <motion.p
-        variants={textRevealMotion(0.4, "bottomToTop")}
-        className="text-xl text-center pt-6"
-      >
-        a passionate Front-end Developer based in India, fueled by carrots and
-        code.
-        <br />
-        Brewing a Full-stack potion
-        <br />
-        Got a project in mind? Let&apos;s chat!
-      </motion.p>
-      <motion.div
-        variants={textRevealMotion(0.6, "bottomToTop")}
-        className="w-full flex justify-center mt-8"
-      >
-        <Button className="font-semibold tracking-wider font-roboto">
-          Get in Touch
-        </Button>
-      </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-2 p-4 md:p-8 space-y-12 md:space-y-32">
+        <div className="">
+          <motion.h2
+            variants={textRevealMotion(0.2, "bottomToTop")}
+            className="w-full text-left text-5xl md:text-8xl text-white leading-[1.2] font-syne relative"
+          >
+            <RedoAnimText delay={1} />
+            <CursorBlinker />
+          </motion.h2>
+          <motion.h2
+            variants={textRevealMotion(0.2, "bottomToTop")}
+            className="w-full text-left text-xl md:text-2xl text-white leading-[1.2] font-montserrat font-thin mt-8"
+          >
+            Mastering the craft of front-end. Creating killer visuals.
+          </motion.h2>
+        </div>
+
+        <div className="">
+          <motion.p
+            variants={textRevealMotion(0.2, "rightToLeft")}
+            className="w-full text-left text-xl md:text-xl mix-blend-difference leading-[2] font-poppins font-extralight translate-y-full relative"
+            style={{ lineHeight: 1.8 }}
+          >
+            Hi! I&apos;m Ash, a{" "}
+            <span className=" mix-blend-difference  font-medium px-1 relative">
+              <motion.span
+                variants={textHighlight(0.5)}
+                className="absolute left-0 top-0 w-full h-full bg-blue-800 z-[-1] origin-left "
+              />
+              front-end developer
+            </span>{" "}
+            based in India with over 2 years of experience . <br />
+            I&apos;m passionate about building beautiful and functional web
+            experiences using HTML, CSS, JavaScript,{" "}
+            <span className=" mix-blend-difference  font-medium px-1 relative">
+              <motion.span
+                variants={textHighlight(1.1)}
+                className="absolute left-0 top-0 w-full h-full bg-blue-800 z-[-1] origin-left "
+              />
+              React.js, Next.js
+            </span>{" "}
+            , Tailwind CSS, and testing frameworks like Playwright and Jest.
+          </motion.p>
+          <motion.div className="mt-12 flex justify-between items-center">
+            <Link href="/contact-me">
+              <Button className="font-semibold">Get in touch</Button>
+            </Link>
+            <div className="icons flex items-center gap-6">
+              <Link href="">
+                <Icons.Github className="h-6 w-6 text-inherit" />
+              </Link>
+              <Link href="">
+                <Icons.Gmail className="h-6 w-6 text-inherit" />
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </div>
     </motion.div>
-    // </EntryAndExit>
   );
 };
 
-export default LandingPage;
+export default NewLanding;

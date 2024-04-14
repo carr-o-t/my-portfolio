@@ -227,3 +227,19 @@ export const revealOnScroll = (
       };
   }
 };
+
+export const textHighlight = (delay: number) => {
+  return {
+    initial: { scaleX: 0, opacity: 0 },
+    animate: {
+      scaleX: 1,
+      opacity: 1,
+      transition: {
+        delay: delay,
+        duration: 1,
+        ease: easings.easeOutQuart,
+        origin: "left",
+      },
+    },
+  };
+};
