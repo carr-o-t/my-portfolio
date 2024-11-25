@@ -31,16 +31,12 @@ export default async function handler(
         from: username,
         to: process.env.PERSONAL_EMAIL,
         replyTo: email,
-        subject: `Portolio contact`,
-        html: `
-        <p>Name: ${full_name} </p>
-        <p>Email: ${email} </p>
-        <p>Message: ${message} </p>
-        `,
+        subject: `Portfolio Contact: Message from ${full_name}`,
+        html: `<p>${message}</p>`,
       });
 
       const successRes = {
-        message: "Success: email was sent",
+        message: "Success: Email was sent",
       } as any;
       return res.json({ successRes } as any);
     } catch (err) {
