@@ -32,7 +32,10 @@ export default async function handler(
         to: process.env.PERSONAL_EMAIL,
         replyTo: email,
         subject: `Portfolio Contact: Message from ${full_name}`,
-        html: `<p>${message}</p>`,
+        html: `
+        <p>Name: ${full_name} </p>
+        <p>Email: ${email} </p>
+        <p>Message: ${message} </p>`,
       });
 
       const successRes = {
