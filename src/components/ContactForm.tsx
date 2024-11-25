@@ -40,6 +40,7 @@ const ContactForm: FC<ContactFormProps> = ({}) => {
     if (!response.ok) {
       toast.error("Failed to send email");
     } else {
+      form.reset()
       toast.success("Success: Email sent");
     }
     setLoading(false);
