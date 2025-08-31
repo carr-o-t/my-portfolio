@@ -1,4 +1,3 @@
-import { Icons } from "@/components/Icons";
 import TextSpinnerLoader from "@/components/TextSpinnerLoader";
 import { NavMenu } from "@/components/nav/NavMenu";
 import Navbar from "@/components/nav/Navbar";
@@ -6,6 +5,7 @@ import { Toaster } from "@/components/ui/Sonner";
 import "@/styles/globals.css";
 import { AnimatePresence, motion } from "framer-motion";
 import type { AppProps } from "next/app";
+import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
@@ -20,8 +20,15 @@ export default function App({ Component, pageProps, router }: AppProps) {
     return () => clearInterval(timer);
   }, []);
   return (
-    // <React.Suspense fallback={<TextSpinnerLoader />}>
     <div className="main min-h-screen relative">
+      <Head>
+        <title>Portfolio - Software Engineer</title>
+        <meta name="description"
+          content="Software Engineer specializing in TypeScript, React, and Node.js. Building modern web applications with a focus on user experience and clean code." />
+        <meta name="keywords" content="software engineer, full-stack developer, react, typescript, nodejs, web development" />
+        <meta name="author" content="ByteTheCarrot" />
+        <meta name="theme-color" content="#84CC16" />
+      </Head>
       {!mount && <TextSpinnerLoader />}
       {mount && (
         <>
@@ -88,6 +95,5 @@ export default function App({ Component, pageProps, router }: AppProps) {
       </AnimatePresence>
       <Toaster />
     </div>
-    // </React.Suspense>
   );
 }

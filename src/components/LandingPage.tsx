@@ -41,7 +41,7 @@ const NewLanding: FC<NewLandingProps> = ({}) => {
             className="w-full text-left text-sm md:text-xl leading-[2] font-poppins font-extralight translate-y-full relative"
             style={{ lineHeight: 1.8 }}
           >
-            Hi! I&apos;m Ash, a{" "}
+            Hi! I&apos;m Stakshi, a{" "}
             <span className=" mix-blend-difference  font-medium px-1 relative">
               <motion.span
                 variants={textHighlight(0.5)}
@@ -49,7 +49,7 @@ const NewLanding: FC<NewLandingProps> = ({}) => {
               />
               front-end developer
             </span>{" "}
-            based in India with over 2 years of experience . <br />
+            based in India with over 2 years of experience. <br />
             I&apos;m passionate about building beautiful and functional web
             experiences using HTML, CSS, JavaScript,{" "}
             <span className=" mix-blend-difference  font-medium px-1 relative">
