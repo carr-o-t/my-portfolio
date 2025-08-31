@@ -76,6 +76,12 @@ const NewLanding: FC<NewLandingProps> = ({}) => {
           </motion.div>
         </div>
       </div>
+
+       <motion.div className="mt-6 md:mt-12 flex justify-center items-center">
+      <p className="rounded-full bg-gray-500/30 px-4 py-2 text-sm md:text-base text-white flex items-center gap-2 font-roboto font-light">
+            ✨ New version available — <Link href="https://bytethecarrot.dev" className="underline underline-offset-4 " target="_blank">View Portfolio v2</Link>
+      </p>
+          </motion.div>
     </motion.div>
   );
 };
