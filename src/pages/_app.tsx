@@ -89,7 +89,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
         )}
         <footer className="block md:fixed bottom-0 w-full right-0 bg-black">
           <p className="text-sm p-1 text-center md:text-start text-white/50">
-            © 2024 Ash. All Rights Reserved
+            © 2024 Stakshi. All Rights Reserved
           </p>
         </footer>
       </AnimatePresence>
