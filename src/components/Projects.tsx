@@ -103,7 +103,7 @@ const Projects: FC<ProjectsProps> = ({}) => {
               Redux toolkkit for state management
             </p>
             <div className="mt-6  flex gap-x-4 ">
-              <Link href="https://carrotier.vercel.app/" target="_blank">
+              <Link href="https://carrotier.bytethecarrot.dev" target="_blank">
                 <Icons.link className="h-6 w-6 text-white" />
               </Link>
 
